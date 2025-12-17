@@ -14,6 +14,8 @@ def process_line(line):
         return text.lower()
     elif cmd == "count-words":
         return len(text.split())
+    elif cmd == "lenght":
+	return len(text.split())
 
     return "Unknown command " + cmd
 
