@@ -12,6 +12,8 @@ def process_line(line):
         return text.upper()
     if cmd == "lowercase":
         return text.lower()
+    elif cmd == "prefix":
+	return text[:10]
 
     return "Unknown command " + cmd
 
@@ -30,3 +32,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+def prefix(text):
+    return text[:10]
